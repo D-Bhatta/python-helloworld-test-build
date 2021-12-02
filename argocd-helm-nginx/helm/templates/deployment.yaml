@@ -28,4 +28,5 @@ spec:
         - image: "{{.Values.image.repository}}:{{.Values.image.tag}}"
           imagePullPolicy: "{{.Values.image.pullPolicy}}"
           name: nginx-alpine
-      resources: !!toYaml "{{toYaml .Values.resources}}"
+      resources:
+        !!toYaml "{{toYaml .Values.resources}}"
