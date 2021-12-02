@@ -1,3 +1,4 @@
+---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -9,7 +10,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: deployments/python-manifests
+    helm:
+      valueFiles:
+        - values.yaml
+    path: argocd-helm/helm
     repoURL: https://github.com/D-Bhatta/python-helloworld-test-build
     targetRevision: HEAD
-  syncPolicy: {}

@@ -1,0 +1,9 @@
+---
+namespace:
+  name: test
+
+image:
+  repository: dbhatta/python-helloworld
+  tag: v1.0.0.0
+
+replicaCount: 2
