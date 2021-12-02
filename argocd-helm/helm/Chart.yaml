@@ -5,7 +5,7 @@ description: Install a Python HelloWorld deployment with version v1.0.0.0
 keywords:
   - python
   - helloworld
-version: 1.0.0.0
+version: 1.0.0
 maintainers:
   - name: dbhatta
     email: mail@debabrata.xyz
