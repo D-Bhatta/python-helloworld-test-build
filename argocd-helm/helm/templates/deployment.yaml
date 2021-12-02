@@ -7,7 +7,7 @@ metadata:
   name: python-helloworld
   namespace: "{{.Values.namespace.name}}"
 spec:
-  replicas: {{.Values.replicaCount}}
+  replicas: "{{int .Values.replicaCount}}"
   selector:
     matchLabels:
       app: python-helloworld
