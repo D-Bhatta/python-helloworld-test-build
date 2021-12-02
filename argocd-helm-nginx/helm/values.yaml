@@ -1,4 +1,5 @@
 ---
+# values.yaml
 namespace:
   name: demo
 

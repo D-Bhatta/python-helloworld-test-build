@@ -1,4 +1,5 @@
 ---
+# Chart.yaml
 apiVersion: v1
 name: nginx-deployment
 description: Install Nginx deployment manifests
