@@ -4,7 +4,7 @@ name: nginx-deployment
 description: Install Nginx deployment manifests
 keywords:
   - nginx
-version: 1.0.0
+version: 3.7.1
 maintainers:
   - name: dbhatta
     email: mail@debabrata.xyz
