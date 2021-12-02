@@ -1,9 +1,10 @@
+---
 apiVersion: v1
 name: nginx-deployment
 description: Install Nginx deployment manifests
 keywords:
-- nginx 
+  - nginx
 version: 1.0.0
 maintainers:
-- name: dbhatta 
-  email: mail@debabrata.xyz
+  - name: dbhatta
+    email: mail@debabrata.xyz

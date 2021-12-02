@@ -1,12 +1,13 @@
+---
 namespace:
   name: demo
- 
+
 service:
   port: 8111
   type: ClusterIP
 
 image:
-  repository: nginx 
+  repository: nginx
   tag: alpine
   pullPolicy: IfNotPresent
 

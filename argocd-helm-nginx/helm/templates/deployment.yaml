@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -5,9 +6,9 @@ metadata:
     app: nginx
     tag: alpine
   name: nginx-alpine
-  namespace: "{{.Values.namespace.name}}" 
+  namespace: "{{.Values.namespace.name}}"
 spec:
-  replicas: !!int "{{.Values.replicaCount}}" 
+  replicas: !!int "{{.Values.replicaCount}}"
   selector:
     matchLabels:
       app: nginx
@@ -24,8 +25,8 @@ spec:
         tag: alpine
     spec:
       containers:
-      - image: "{{.Values.image.repository}}:{{.Values.image.tag}}"
-        imagePullPolicy: "{{.Values.image.pullPolicy}}"
-        name: nginx-alpine
-        resources:
+        - image: "{{.Values.image.repository}}:{{.Values.image.tag}}"
+          imagePullPolicy: "{{.Values.image.pullPolicy}}"
+          name: nginx-alpine
+      resources:
 !!toYaml "{{toYaml .Values.resources | indent 12}}"
